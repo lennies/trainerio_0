@@ -1,1 +1,36 @@
+
+
 @import 'bootstrap';
+
+/* universal */
+body {
+  padding-top: 30px;
+}
+.center {
+  text-align: center;
+}
+
+.navbar li {
+	margin-right: 10px;
+}
+
+
+.header {
+	background: url(/assets/ps_neutral.png) repeat;
+	padding: 40px 0;
+	height: 325px;
+  min-width: 960px;
+}
+
+.about {
+	background: #2980b9;
+	padding: 5px 0;
+	height: 400px;
+  min-width: 960px;
+}
+
+.features p {
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
