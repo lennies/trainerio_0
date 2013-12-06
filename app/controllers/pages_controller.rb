@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def home
   end
-   def home2
+   def requests
   end
 end
