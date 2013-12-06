@@ -1,4 +1,5 @@
 Trainerio::Application.routes.draw do
+  devise_for :users
  root "pages#home"
  get "pages/home2"
   # The priority is based upon order of creation: first created -> highest priority.

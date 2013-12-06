@@ -5,7 +5,12 @@
   		<div class="col-md-6">
   			<h1>Get a Personal Trainer. </br> Get Results.</h1>
 				<h4>Let us connect you to highly trained, pre-screened fitness professionals available for online training.</h4></br>
-			<%= link_to "Get Started", "#", class: "btn btn-primary btn-lg" %> </br></br></br></br>
+				<% if user_signed_in? %>
+          # do something
+     <% else %>
+       	<%= link_to "Get Started", "#", class: "btn btn-primary btn-lg" %>
+  <% end %>  
+			 </br></br></br></br>
 		</div>
 	</div>
 </div>
