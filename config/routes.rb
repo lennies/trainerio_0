@@ -1,7 +1,8 @@
 Trainerio::Application.routes.draw do
   devise_for :users
  root "pages#home"
- get "pages/requests"
+ get "requests" => "pages#requests"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -57,3 +58,4 @@ Trainerio::Application.routes.draw do
   #     resources :products
   #   end
 end
+
