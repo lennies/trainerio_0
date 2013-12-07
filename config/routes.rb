@@ -1,4 +1,6 @@
 Trainerio::Application.routes.draw do
+  resources :signups
+
   devise_for :users
  root "pages#home"
  get "requests" => "pages#requests"
