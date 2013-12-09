@@ -21,8 +21,8 @@ Trainerio::Application.configure do
     address:              'smtp.gmail.com',
     port:                 587,
     domain:               'trainerio.com',
-    user_name:            'lennie@trainerio.com',
-    password:             'Parrot28?',
+    user_name:            ENV["gmail_name"],
+    password:             ENV["gmail_pwd"],
     authentication:       'plain',
     enable_starttls_auto: true  }
 
