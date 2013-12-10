@@ -5,6 +5,6 @@ class UserMailer < ActionMailer::Base
    def welcome_email(message)
     @message = message
 
-    mail to: message.email, subject: 'Welcome to My Awesome Site'
+    mail to: "lennie@trainerio.com", subject: 'User Request'
   end
 end

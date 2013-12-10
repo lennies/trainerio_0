@@ -8,7 +8,7 @@ class MessagesController < ApplicationController
     @message = Message.new(params[:message])
     if @message.valid?
       UserMailer.welcome_email(@message).deliver
-      redirect_to root_url, notice: "Message sent! Thank you for contacting us."
+      redirect_to root_url, notice: "Thanks for your request! We'll reach out to you shortly!"
     else
       render "new"
     end

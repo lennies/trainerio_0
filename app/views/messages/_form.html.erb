@@ -1,0 +1,32 @@
+<%= form_for @message, :html => {:class => "form-horizontal", :role => "form"} do |f| %>
+  <% if @message.errors.any? %>
+    <div class="error_messages">
+      <h2><%= pluralize(@message.errors.count, "error") %> prohibited this message from being saved:</h2>
+      <ul>
+      <% @message.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group .col-xs-4">
+  </br>
+    <%= f.label :name %><br />
+    <%= f.text_field :name, class: "form-control", placeholder: "ex. John Smith" %>
+  </div>
+  <div class="form-group .col-xs-4">
+    <%= f.label :email %><br />
+    <%= f.text_field :email, class: "form-control", placeholder: "ex. example@gmail.com" %>
+  </div>
+  <div class="form-group .col-xs-2">
+    <%= f.label :age, "Age" %><br />
+    <%= f.text_field :age, class: "form-control", placeholder: "ex. 32" %>
+  </div>
+    <div class="form-group .col-xs-4">
+    <%= f.label :goal, "Primary Goal" %><br />
+    <%= f.text_field :goal, class: "form-control", placeholder: "ex. General Fitness, Weight Loss, Strength" %>
+  </div>
+
+  <div class="actions"><%= f.submit "Send Message", class: "btn btn-danger" %></div>
+<% end %>

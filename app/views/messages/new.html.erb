@@ -1,27 +1,18 @@
-<h1>Contact Us</h1>
+<div class="header">
+  <div class="container">
+    <h4>Steps to finding your perfect trainer:</h4>
+    <ol>
+      <li>Fill out the trainer request form below.</li>
+      <li>Within 24 hours, our team will email you with an available trainer that is perfect for you (and their monthly rates).</li>
+      <li>You can accept that trainer, or tell us why they're not right for you and we'll find you someone else.</li>
+      <li>After we find the perfect trainer for you, we'll put you in touch to get to work!</li>
+    </ol>
+  </div>
+  <div class="center">
+  <h5>If you're not happy with your trainer after 30 days, we'll offer you a 100% refund!</h5>
+</div>
+</div>
 
-<%= form_for @message do |f| %>
-  <% if @message.errors.any? %>
-    <div class="error_messages">
-      <h2><%= pluralize(@message.errors.count, "error") %> prohibited this message from being saved:</h2>
-      <ul>
-      <% @message.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :content, "Message" %><br />
-    <%= f.text_area :content, :rows => 5 %>
-  </div>
-  <div class="actions"><%= f.submit "Send Message" %></div>
-<% end %>
+<div class="center">
+<%= render 'messages/form' %>
+</div>

@@ -3,8 +3,8 @@ Trainerio::Application.routes.draw do
 
   devise_for :users
  root "pages#home"
- get "requests" => "pages#requests"
- get "messages" => "messages#new"
+ get "confirmation" => "pages#beta"
+ get "requests" => "messages#new"
  post "messages" => 'messages#create'
 
   # The priority is based upon order of creation: first created -> highest priority.
