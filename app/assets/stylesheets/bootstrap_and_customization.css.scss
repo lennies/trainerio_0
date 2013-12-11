@@ -1,7 +1,10 @@
+$thumbnail-bg: #ecf0f1;
+
 
 @import 'bootstrap';
 
-/* universal */
+
+
 
 body {
   padding-top: 30px;
@@ -14,12 +17,22 @@ body {
 	margin-right: 10px;
 }
 
+.header1 {
+	background: url('bkgrd.png');
+	background-size: 100% 100%;
+	padding: 60px 0;
+	height: 100%;
+  min-width: 100%;
+}
+
 .header {
 	background: #ecf0f1;
 	padding: 40px 0;
 	height: 100%;
   min-width: 100%;
 }
+
+
 
 .about {
 	background: #2980b9;
@@ -47,3 +60,7 @@ body {
 	width: 25%;
 }
 
+.brand {
+	width: 10%;
+	height: 10%;
+}

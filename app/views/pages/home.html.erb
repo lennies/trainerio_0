@@ -1,5 +1,5 @@
 <!--Jumbotron-->
-<div class="header">
+<div class="header1">
   <div class="container">
   	<div class="row">
   		<div class="col-md-6">
@@ -9,7 +9,10 @@
           # do something
      		<% else %>
        		<%= link_to "Get Started", requests_path, class: "btn btn-primary btn-lg" %>
-  			<% end %>  
+  			<% end %> 
+  				<button class="btn btn-danger btn-lg" data-toggle="modal" data-target="#learnmore">
+  Learn More
+</button>
 			 		</br></br></br>
 			</div>
 		</div>
@@ -33,23 +36,17 @@
 			<div class="row center">
 					<div class="col-sm-6 col-md-4">
 					  <div class="thumbnail">
-					    <div class="caption">
-					      <h4>1. Submit a Free Request.</h4>
-					    </div>
+					      <h4><span class="glyphicon glyphicon-import"></span> 1. Submit a Free Request.</h4>
 					  </div>
 					</div>
 					  <div class="col-sm-6 col-md-4">
 					    <div class="thumbnail">
-					      <div class="caption">
-					        <h4>2. We'll find you a great trainer.</h4>
-					      </div>
+					        <h4><span class="glyphicon glyphicon-user"></span> 2. We'll find you a great trainer.</h4>
 					    </div>
 					  </div>
 					  <div class="col-sm-6 col-md-4">
 					    <div class="thumbnail">
-					      <div class="caption">
-					        <h4>3. Get Connected and Get Results.</h4>
-					      </div>
+					        <h4><span class="glyphicon glyphicon-star-empty"></span> 3. Get Connected and Get Results.</h4>
 							</div>
 						</div>
 			</div>
@@ -164,6 +161,29 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
+<div class="modal fade" id="learnmore" tabindex="-1" role="dialog" aria-labelledby="learnmore" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="learnmore"><img class="brand" src="assets/logofull.png"></h4>
+      </div>
+      <div class="modal-body">
+        Getting in shape is hard. If you're like us, you're overwhelmed by workout routines, exercise products, and nutrition plans. You just want someone to tell you what you need to do. A personal trainer would be great, but they can be expensive and how would you know if you're getting a good one?</br></br>Enter TrainerIO. We want to make workout simple. We'll connect you with the best minds in physical fitness and you'll get the benefits of their wisdom and experience---at a fraction of their usual cost.</br></br>Every personal trainer will have their own techniques, but we at TrainerIO will assure you get:
+       <ol>
+	      <li>Monthly Customized Workout Plans</li>
+	      <li>Initial Phone/Skype Consultation</li>
+	      <li>Two 30 Minute Calls each Month</li>
+	      <li>Regular Question/Answer via Email</li>
+    	</ol>
+    	Plus, you'll get the TrainerIO team supporting your entire relationship. We're so confident in the trainers we've selected, if you're not happy with your experience in the first 30 days, you'll get a 100% refund!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 
 
