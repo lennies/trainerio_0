@@ -18,7 +18,7 @@ gem 'devise', '~> 3.1.1'
 gem 'paperclip', '~> 3.0'
 gem 'aws-sdk', '~> 1.20.0'
 gem 'active_attr'
-gem "twitter-bootstrap-rails"
+gem 'font-awesome-sass'
 
 
 group :doc do
