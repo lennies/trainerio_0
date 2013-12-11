@@ -1,5 +1,5 @@
 $thumbnail-bg: #ecf0f1;
-
+$navbar-height: 50px;
 
 @import 'bootstrap';
 
@@ -34,7 +34,7 @@ body {
 
 
 
-.about {
+.how {
 	background: #2980b9;
 	padding-top: 1px;
 	padding-left: 10px;
@@ -63,4 +63,23 @@ body {
 .brand {
 	width: 10%;
 	height: 10%;
+}
+
+.navbar .brand {
+    max-height: 40px;
+    overflow: visible;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 45px;
+  	width: 110px;
+}
+
+.about img {
+  margin-left: 100px;
+  width: 300px;
+  height: 325px;
+  
+}
+.about a{
+	color: #3498db;
 }

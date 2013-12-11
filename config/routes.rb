@@ -5,6 +5,7 @@ Trainerio::Application.routes.draw do
  root "pages#home"
  get "confirmation" => "pages#beta"
  get "requests" => "messages#new"
+ get "about" => "pages#about"
  post "messages" => 'messages#create'
 
   # The priority is based upon order of creation: first created -> highest priority.
