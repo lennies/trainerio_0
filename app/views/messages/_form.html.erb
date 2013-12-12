@@ -24,8 +24,8 @@
     <%= f.text_field :age, class: "form-control", placeholder: "ex. 32" %>
   </div>
     <div class="form-group .col-xs-4">
-    <%= f.label :goal, "Primary Goal" %><br />
-    <%= f.text_field :goal, class: "form-control", placeholder: "ex. General Fitness, Weight Loss, Strength" %>
+    <%= f.label :goal, "Additional Info" %><br />
+    <%= f.text_area :goal, class: "form-control", placeholder: "ex. Goals, Experience, Preferences, etc." %>
   </div>
 
   <div class="actions"><%= f.submit "Send Message", class: "btn btn-danger" %></div>
