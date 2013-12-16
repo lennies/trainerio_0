@@ -14,7 +14,7 @@ class ProfilesController < ApplicationController
 
   # GET /profiles/new
   def new
-    @profile = current_user.profile.build
+    @profile = Profile.new
   end
 
   # GET /profiles/1/edit
@@ -24,7 +24,7 @@ class ProfilesController < ApplicationController
   # POST /profiles
   # POST /profiles.json
   def create
-    @profile = current_user.profile.build(profile_params)
+    @profile = Profile.new(profile_params)
 
     respond_to do |format|
       if @profile.save
@@ -74,6 +74,6 @@ class ProfilesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def profile_params
-      params.require(:profile).permit(:name, :email, :description)
+      params.require(:profile).permit(:name, :email, :description, :image)
     end
 end

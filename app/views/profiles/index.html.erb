@@ -15,6 +15,7 @@
   <tbody>
     <% @profiles.each do |profile| %>
       <tr>
+        <td><%= image_tag profile.image.url(:medium) %></td>
         <td><%= profile.name %></td>
         <td><%= profile.email %></td>
         <td><%= profile.description %></td>
