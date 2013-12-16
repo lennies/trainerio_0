@@ -1,5 +1,7 @@
 Trainerio::Application.routes.draw do
 
+  resources :profiles
+
   devise_for :users
  root "pages#home"
  get "confirmation" => "pages#beta"

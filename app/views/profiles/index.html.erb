@@ -1,0 +1,30 @@
+<h1>Listing profiles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @profiles.each do |profile| %>
+      <tr>
+        <td><%= profile.name %></td>
+        <td><%= profile.email %></td>
+        <td><%= profile.description %></td>
+        <td><%= link_to 'View Profile', profile %></td>
+        <% if profile.user == current_user %>
+          <td><%= link_to 'Edit', edit_profile_path(@profile) %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
